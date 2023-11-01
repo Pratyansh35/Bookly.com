@@ -1,6 +1,37 @@
 
 @import 'footer.css';
 
+.brand-logo{
+    width: 136px;
+
+    object-fit: cover;
+}
+.link-container{
+    align-items: center;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    font-family: 'roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.link-container li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+    font-family: 'roboto', sans-serif;
+}
+.link{
+    text-transform: capitalize;
+    padding: 0 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #383838;
+    opacity: 0.5;
+    transition: .5s;
+}
+
 .hero-section{
     width: 100%;
     height: calc(100vh - 120px);

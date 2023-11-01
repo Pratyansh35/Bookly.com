@@ -17,9 +17,12 @@
 
 <body>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary" style="position: sticky; top: 0; left: 0; z-index: 9; display: block;">
     <div class="container">
-        <a class="navbar-brand" href="#">bookly.com</a>
+        <!-- <a class="navbar-brand" href="#">bookly.com</a> -->
+        <a href="#">
+            <img src="img/dark-logo.png" class="brand-logo" alt="Bookly - Many's favorite">
+        </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,8 +30,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <button type="button" class="btn btn-primary">
-                    Cart<span class="badge badge-light" id="wishlist-count">0</span>
+                <button type="button" class="btn " style="background: #383838; color: #ffffff;">
+                    Cart<span class="badge badge-light" id="wishlist-count" >0</span>
                 </button>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -47,7 +50,7 @@
                             <hr class="dropdown-divider">
                         </li>
                         <li><a class="dropdown-item" href="#">Order History</a></li>
-                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Donate</a></li>
                         <li><a class="dropdown-item" href="#">Locations</a></li>
                     </ul>
                 </li>
@@ -58,6 +61,13 @@
 
         </div>
     </div>
+    <ul class="links-container" style="width: 100%; display: flex; justify-content: center; list-style: none; border-top: 1px solid #d1d1d1;">
+        <li class="link-item"><a href="#" class="link">home</a></li>
+        <li class="link-item"><a href="#" class="link">novels</a></li>
+        <li class="link-item"><a href="#" class="link">comdey comics</a></li>
+        <li class="link-item"><a href="#" class="link">study books</a></li>
+        <li class="link-item"><a href="#" class="link">fictional books </a></li>
+    </ul>
 </nav>
 
 <!--hero section start-->
