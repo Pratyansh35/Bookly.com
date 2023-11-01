@@ -1,4 +1,4 @@
-@import 'nav.css';
+
 @import 'footer.css';
 
 .hero-section{
@@ -12,7 +12,7 @@
 }
 
 .hero-section .logo{
-    height: 150px;
+    width: 50%;
     display: block;
     margin: auto;
 }
