@@ -13,11 +13,6 @@
     list-style: none;
     border-top: 1px solid #d1d1d1;
     align-items: center;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
     font-family: 'roboto', sans-serif;
     box-sizing: border-box;
 }
@@ -26,11 +21,14 @@
     display: list-item;
     text-align: -webkit-match-parent;
     font-family: 'roboto', sans-serif;
+    
 }
+
+
 
 .link {
     text-transform: capitalize;
-    padding: 0 10px;
+    padding: 10px;
     
     text-decoration: none;
     color: #383838;
