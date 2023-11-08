@@ -1,355 +1,89 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="icon" href="img/image.png" type="image/x-icon type">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <title>Bookly.com</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="icon" href="img/image.png" type="image/x-icon type">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>Bookly.com</title>
 </head>
-
 <body>
+<section class="vh-100" style="width: 100%; height: 100%; align-content: center">
+  <div class="container-fluid h-custom" style="width: 100%; height: 100%; align-content: center">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-9 col-lg-6 col-xl-5">
+        <img src="img/dark-logo.png"
+             class="img-fluid" alt="Sample image">
+      </div>
+      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+        <form>
+          <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+            <p class="lead fw-normal mb-0 me-6">Sign-in</p>
+          </div>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary" style="position: sticky; top: 0; left: 0; z-index: 9; display: block;">
-    <div class="container">
-        <!-- <a class="navbar-brand" href="#">bookly.com</a> -->
-        <a href="#">
-            <img src="img/dark-logo.png" class="brand-logo" alt="Bookly - Many's favorite">
-        </a>
+          <div class="divider d-flex align-items-center my-4">
+          </div>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <button type="button" class="btn " style="background: #383838; color: #ffffff;">
-                    Cart<span class="badge badge-light" id="wishlist-count" >0</span>
-                </button>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Order</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Settings
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Wish List</a></li>
-                        <li><a class="dropdown-item" href="#">Account</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Order History</a></li>
-                        <li><a class="dropdown-item" href="#">Donate</a></li>
-                        <li><a class="dropdown-item" href="#">Locations</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
-                </li>
-            </ul>
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <label  class="form-label" for="email" >Email address</label>
+            <input  type="email" id="email" class="form-control form-control-lg"  placeholder="Enter a valid email address" />
 
-        </div>
+          </div>
+
+          <!-- Password input -->
+          <div class="form-outline mb-3">
+            <label class="form-label" for="password">Password</label>
+            <input  type="password" id="password" class="form-control form-control-lg passwordt" placeholder="Enter password"/>
+
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center">
+
+            <!-- Checkbox -->
+            <div class="form-check mb-0">
+              <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3">
+              <label class="form-check-label" for="form2Example3">
+                Remember me
+              </label>
+            </div>
+
+            <a href="#!" class="text-body">Forgot password?</a>
+          </div>
+
+          <div class="text-center text-lg-start mt-4 pt-2">
+            <div style="visibility: hidden" class="alert alert-danger" role="alert">Invalid credentials</div>
+            <button type="button" class="btn btn-primary btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;" id="loginButton"  >Login</button>
+
+            <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#"
+                                                                              class="link-danger">Register</a></p>
+          </div>
+
+
+        </form>
+      </div>
     </div>
-    <ul class="links-container" style="padding-left: 0px;">
-        <li class="link-item"><a href="#" class="link">Home</a></li>
-        <li class="link-item"><a href="#" class="link">Novels</a></li>
-        <li class="link-item"><a href="#" class="link">Comics </a></li>
-        <li class="link-item"><a href="#" class="link">Study</a></li>
-        <li class="link-item"><a href="#" class="link">Fictional</a></li>
-    </ul>
-</nav>
-
-<!--hero section start-->
-
-<header class="hero-section">
-    <div class="content">
-        <img src="img/light-logo.png" class="logo" alt="">
-        <p class="sub-heading" style="font-family: Verdana, Geneva, Tahoma; font-style: italic;">best books collection of all time</p>
-    </div>
-</header>
-<!--hero section end-->
-
-<section class="product">
-    <h2 class="product-category">best selling</h2>
-    <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
-    <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
-    <div class="product-container">
-        <div class="product-card">
-            <div class="product-image">
-                <span class="discount-tag">50% off</span>
-                <img src="img/card1.png" class="product-thumb" alt="Think like  Monk -Jay Shetty">
-                <button class="card-btn">add to Cart</button>
-            </div>
-            <div class="product-info">
-                <h2 class="product-brand">Jay Shetty</h2>
-                <p class="product-short-des">Think Like a Monk: The secret of<br>how to harness the power of
-                    positivity and be happy now Paperback</p>
-                <span class="price">₹190</span><span class="actual-price">₹380</span>
-            </div>
-        </div>
-        <div class="product-card">
-            <div class="product-image">
-                <span class="discount-tag">50% off</span>
-                <img src="img/card2.png" class="product-thumb" alt="">
-                <button class="card-btn">add to Cart</button>
-            </div>
-            <div class="product-info">
-                <h2 class="product-brand">E. L. James</h2>
-                <p class="product-short-des"> British-American film trilogy series that consists of three erotic
-                    romantic drama films.</p>
-                <span class="price">₹75</span><span class="actual-price">₹150</span>
-            </div>
-        </div>
-        <div class="product-card">
-            <div class="product-image">
-                <span class="discount-tag">50% off</span>
-                <img src="img/card3.png" class="product-thumb" alt="">
-                <button class="card-btn" id="add-to-wishlist">add to Cart</button>
-            </div>
-            <div class="product-info">
-                <h2 class="product-brand">S.L Arora</h2>
-                <p class="product-short-des">a short line about the cloth..</p>
-                <span class="price">₹480</span><span class="actual-price">₹960</span>
-            </div>
-        </div>
-        <div class="product-card">
-            <div class="product-image">
-                <span class="discount-tag">50% off</span>
-                <img src="img/card4.png" class="product-thumb" alt="">
-                <button class="card-btn">add to Cart</button>
-            </div>
-            <div class="product-info">
-                <h2 class="product-brand">R.D. Sharma</h2>
-                <p class="product-short-des">a short line about the cloth..</p>
-                <span class="price">₹250</span><span class="actual-price">₹500</span>
-            </div>
-        </div>
-        <div class="product-card">
-            <div class="product-image">
-                <span class="discount-tag">50% off</span>
-                <img src="img/card5.png" class="product-thumb" alt="">
-                <button class="card-btn">add to Cart</button>
-            </div>
-            <div class="product-info">
-                <h2 class="product-brand">Jerome k. Jerome</h2>
-                <p class="product-short-des">a short line about the cloth..</p>
-                <span class="price">₹200</span><span class="actual-price">₹400</span>
-            </div>
-        </div>
-        <div class="product-card">
-            <div class="product-image">
-                <span class="discount-tag">50% off</span>
-                <img src="img/card6.png" class="product-thumb" alt="">
-                <button class="card-btn">add to Cart</button>
-            </div>
-            <div class="product-info">
-                <h2 class="product-brand">Robin Sharma</h2>
-                <p class="product-short-des">a self-help book by Robin Sharma, a writer and motivational
-                    speaker.</p>
-                <span class="price">₹150</span><span class="actual-price">₹300</span>
-            </div>
-        </div>
-        <div class="product-card">
-            <div class="product-image">
-                <span class="discount-tag">50% off</span>
-                <img src="img/card7.png" class="product-thumb" alt="">
-                <button class="card-btn">add to Cart</button>
-            </div>
-            <div class="product-info">
-                <h2 class="product-brand">Thomas A.</h2>
-                <p class="product-short-des">The complete-reference-html-css-fifth-edition</p>
-                <span class="price">₹40</span><span class="actual-price">₹80</span>
-            </div>
-        </div>
-        <div class="product-card">
-            <div class="product-image">
-                <span class="discount-tag">50% off</span>
-                <img src="img/card8.png" class="product-thumb" alt="">
-                <button class="card-btn">add to Cart</button>
-            </div>
-            <div class="product-info">
-                <h2 class="product-brand">Margaret</h2>
-                <p class="product-short-des">Gone With the Wind-winner of the Pulitzer Prize and one of the
-                    bestselling</p>
-                <span class="price">₹100</span><span class="actual-price">₹200</span>
-            </div>
-        </div>
-    </div>
+  </div>
 </section>
-<!--collection-->
-<section class="collection-container">
-    <a href="#" class="collection">
-        <img src="img/singing-collection.png" alt="">
-        <p class="collection-title">Singing <br> Books</p>
-    </a>
-    <a href="#" class="collection">
-        <img src="img/diet-collection.png" alt="">
-        <p class="collection-title">men <br> books</p>
-    </a>
-    <a href="#" class="collection">
-        <img src="img/religious-book.png" alt="">
-        <p class="collection-title">religious books</p>
-    </a>
-</section>
-
-<!-- cards-container -->
-
-<section class="product">
-    <h2 class="product-category">discounted</h2>
-    <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
-    <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
-    <div class="product-container">
-        <div class="product-card">
-            <div class="product-image">
-                <span class="discount-tag">50% off</span>
-                <img src="img/card1.png" class="product-thumb" alt="Think like  Monk -Jay Shetty">
-                <button class="card-btn">add to Cart</button>
-            </div>
-            <div class="product-info">
-                <h2 class="product-brand">Jay Shetty</h2>
-                <p class="product-short-des">Think Like a Monk: The secret of<br>how to harness the power of
-                    positivity and be happy now Paperback</p>
-                <span class="price">₹190</span><span class="actual-price">₹380</span>
-            </div>
-        </div>
-        <div class="product-card">
-            <div class="product-image">
-                <span class="discount-tag">50% off</span>
-                <img src="img/card2.png" class="product-thumb" alt="">
-                <button class="card-btn">add to Cart</button>
-            </div>
-            <div class="product-info">
-                <h2 class="product-brand">E. L. James</h2>
-                <p class="product-short-des"> British-American film trilogy series that consists of three erotic
-                    romantic drama films.</p>
-                <span class="price">₹75</span><span class="actual-price">₹150</span>
-            </div>
-        </div>
-        <div class="product-card">
-            <div class="product-image">
-                <span class="discount-tag">50% off</span>
-                <img src="img/card3.png" class="product-thumb" alt="">
-                <button class="card-btn">add to Cart</button>
-            </div>
-            <div class="product-info">
-                <h2 class="product-brand">S.L Arora</h2>
-                <p class="product-short-des">a short line about the cloth..</p>
-                <span class="price">₹480</span><span class="actual-price">₹960</span>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <div class="product-image">
-                <span class="discount-tag">50% off</span>
-                <img src="img/card4.png" class="product-thumb" alt="">
-                <button class="card-btn">add to Cart</button>
-            </div>
-            <div class="product-info">
-                <h2 class="product-brand">R.D. Sharma</h2>
-                <p class="product-short-des">a short line about the cloth..</p>
-                <span class="price">₹250</span><span class="actual-price">₹500</span>
-            </div>
-        </div>
-        <div class="product-card">
-            <div class="product-image">
-                <span class="discount-tag">50% off</span>
-                <img src="img/card5.png" class="product-thumb" alt="">
-                <button class="card-btn">add to Cart</button>
-            </div>
-            <div class="product-info">
-                <h2 class="product-brand">Jerome k. Jerome</h2>
-                <p class="product-short-des">a short line about the cloth..</p>
-                <span class="price">₹200</span><span class="actual-price">₹400</span>
-            </div>
-        </div>
-        <div class="product-card">
-            <div class="product-image">
-                <span class="discount-tag">50% off</span>
-                <img src="img/card6.png" class="product-thumb" alt="">
-                <button class="card-btn">add to Cart</button>
-            </div>
-            <div class="product-info">
-                <h2 class="product-brand">Robin Sharma</h2>
-                <p class="product-short-des">a self-help book by Robin Sharma, a writer and motivational
-                    speaker.</p>
-                <span class="price">₹150</span><span class="actual-price">₹300</span>
-            </div>
-        </div>
-        <div class="product-card">
-            <div class="product-image">
-                <span class="discount-tag">50% off</span>
-                <img src="img/card7.png" class="product-thumb" alt="">
-                <button class="card-btn">add to Cart</button>
-            </div>
-            <div class="product-info">
-                <h2 class="product-brand">Thomas A.</h2>
-                <p class="product-short-des">The complete-reference-html-css-fifth-edition</p>
-                <span class="price">₹40</span><span class="actual-price">₹80</span>
-            </div>
-        </div>
-        <div class="product-card">
-            <div class="product-image">
-                <span class="discount-tag">50% off</span>
-                <img src="img/card8.png" class="product-thumb" alt="">
-                <button class="card-btn">add to Cart</button>
-            </div>
-            <div class="product-info">
-                <h2 class="product-brand">Margaret</h2>
-                <p class="product-short-des">Gone With the Wind-winner of the Pulitzer Prize and one of the
-                    bestselling</p>
-                <span class="price">₹100</span><span class="actual-price">₹200</span>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--footer-->
-<footer>
-    <div class="footer-content">
-        <img src="img/light-logo.png" class="logo" alt="">
-        <div class="footer-ul-container">
-            <ul class="category" style="padding-left: 0px;">
-                <li class="category-title">books category</li>
-                <li><a href="#" class="footer-link">comedy books</a></li>
-                <li><a href="#" class="footer-link">novelss</a></li>
-                <li><a href="#" class="footer-link">top rated books</a></li>
-                <li><a href="#" class="footer-link">fictions book</a></li>
-                <li><a href="#" class="footer-link">singing books</a>
-                <li><a href="#" class="footer-link">science</a></li>
-                <li><a href="#" class="footer-link">maths</a></li>
-                <li><a href="#" class="footer-link">socialscience</a></li>
-                <li><a href="#" class="footer-link">sports books</a></li>
-                <li><a href="#" class="footer-link">yoga books</a></li>
-            </ul>
-
-        </div>
-    </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-
-
 <script>
-    $(document).ready(function () {
-        $(".card-btn").click(function () {
-            var currentCount = parseInt($("#wishlist-count").text());
-            $("#wishlist-count").text(currentCount + 1);
-        });
-    });
+
+
+
+  document.getElementById("loginButton").addEventListener("click", login);
+  function  login() {
+    const name = document.getElementById("email");
+    const password = document.getElementById("password");
+    if( name.value === "pratyansh" && password.value === "1234" ){
+        window.location.href = "main.html";
+    }else {
+        alert(name.value + "Is not registered");
+    }
+  }
 </script>
-<script src="js/home.js"></script>
 </body>
 </html>
